@@ -1,0 +1,48 @@
+# ==========================
+#   🚀 GESTION DES COURS
+#   Fichier .gitignore
+# ==========================
+
+# --- Node / Backend ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# --- Base de données locale ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Environnements et variables sensibles ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Logs ---
+logs/
+*.log
+debug.log
+
+# --- Système et IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Dossiers temporaires / builds ---
+dist/
+build/
+.cache/
+.tmp/
+
+# --- Public (si un jour tu compiles du JS avec Vite ou autre) ---
+public/node_modules/
+public/dist/
+
+# --- Divers ---
+*.bak
+*.swp
