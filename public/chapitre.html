@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapitres</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 id="titre-matiere"></h1>
+ 
+  <form id="form-chapitre" enctype="multipart/form-data">
+    <input type="text" id="NOM_CHAPITRE" placeholder="Nom du chapitre" required />
+    <input type="file" id="FICHIER" accept="*/*" />
+    <button type="submit">Ajouter</button>
+  </form>
+ 
+  <ul id="liste-chapitres"></ul>
+ 
+  <a href="matiere.html" class="btn">⬅ Retour aux matières</a>
+ 
+  <!-- 🔹 Modale -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Modifier le chapitre</h3>
+      <input type="text" id="edit-nom" placeholder="Nouveau nom" />
+      <input type="text" id="edit-lien" placeholder="Nouveau lien (optionnel)" />
+      <div class="modal-buttons">
+        <button id="save-btn">💾 Enregistrer</button>
+        <button id="cancel-btn">❌ Annuler</button>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="js/chapitre.js"></script>
+</body>
+</html>
+ 
