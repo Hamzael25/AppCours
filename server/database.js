@@ -21,7 +21,8 @@ export async function creerBaseDeDonnees() {
       ID_CHAPITRE INTEGER PRIMARY KEY AUTOINCREMENT,
       NOM_CHAPITRE TEXT NOT NULL,
       CHEMIN_FICHIER TEXT,
-      ID_MATIERE INTEGER NOT NULL
+      ID_MATIERE INTEGER NOT NULL,
+      FOREIGN KEY (ID_MATIERE) REFERENCES T_MATIERE(ID_MATIERE)
     `);
 
 		  console.log("✅ Base de données initialisée avec succès !");
