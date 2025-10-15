@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matières</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Liste des Matières</h1>
+ 
+  <form id="form-matiere">
+    <input type="text" id="NOM_MATIERE" placeholder="Nom de la matière" required />
+    <button type="submit">Ajouter</button>
+  </form>
+ 
+  <ul id="liste-matieres"></ul>
+ 
+  <a href="index.html" class="btn">⬅ Retour à l'accueil</a>
+ 
+  <!-- 🔹 Modale de modification -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Modifier la matière</h3>
+      <input type="text" id="edit-input" placeholder="Nouveau nom" />
+      <div class="modal-buttons">
+        <button id="save-btn">💾 Enregistrer</button>
+        <button id="cancel-btn">❌ Annuler</button>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="js/matiere.js"></script>
+</body>
+</html>
